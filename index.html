@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-box">
+          <img class="parrotImg" src="./assets/parrot.png" alt="parrot" />
+          <div class="head-text-box">
+            <div class="header-title">PollyGlot</div>
+            <div class="header-below-title">Perfect Translation Every Time</div>
+          </div>
+        </div>
+      </header>
+      <div class="translate-container">
+        <div class="translate-container-title">Text to translate 👇</div>
+        <input class="input-text-area" type="text" placeholder="How are you?" />
+        <div class="translate-container-title">Select language 👇</div>
+        <div class="language-list">
+          <div>
+            <input
+              type="radio"
+              id="French"
+              name="French"
+              value="French"
+              checked
+            />
+            <label for="French"
+              >French
+              <img class="flag-size" src="./assets/fr-flag.png" alt="" />
+            </label>
+          </div>
+          <div>
+            <input type="radio" id="Spanish" name="Spanish" value="Spanish" />
+
+            <label for="Spanish"
+              >Spanish <img class="flag-size" src="./assets/sp-flag.png" alt=""
+            /></label>
+          </div>
+          <div>
+            <input
+              type="radio"
+              id="Japanese"
+              name="Japanese"
+              value="Japanese"
+            />
+            <label for="Japanese"
+              >Japanese
+              <img class="flag-size" src="./assets/jpn-flag.png" alt=""
+            /></label>
+          </div>
+        </div>
+        <button class="translate-button">Translate</button>
+      </div>
+    </div>
+
+    <script src="index.js" type="module"></script>
+  </body>
+</html>

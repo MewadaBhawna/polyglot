@@ -1,0 +1,153 @@
+.container {
+  display: flex;
+  gap: 50px;
+  flex-direction: column;
+}
+
+.header {
+  background-image: url("./assets/worldmap.png");
+  background-size: cover;
+  background-position: center;
+  height: 213px;
+  /* width: 390px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.header-box {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.parrotImg {
+  width: 94.88px;
+  height: 84.8px;
+  top: 65px;
+  left: 42px;
+  gap: 0px;
+  opacity: 0px;
+  align-items: start;
+}
+.head-text-box {
+  display: flex;
+  flex-direction: column;
+  width: 196.1px;
+  height: 75.93px;
+  top: 69.07px;
+  left: 151.9px;
+  gap: 0px;
+  opacity: 0px;
+}
+.header-title {
+  color: #32cd32;
+  align-items: start;
+  font-family: Big Shoulders Display;
+  font-size: 43.42px;
+  font-weight: 800;
+  line-height: 65.13px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.header-below-title {
+  color: #ffffff;
+  font-family: Poppins;
+  font-size: 12.21px;
+  font-weight: 600;
+  line-height: 18.32px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.translate-container {
+  /* width: 362px; */
+  height: 505px;
+  top: 243px;
+  left: 13px;
+  border-radius: 15px;
+  opacity: 0px;
+  border: 4px solid #252f42;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.translate-container-title {
+  color: #035a9d;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.input-text-area {
+  width: 317px;
+  height: 118px;
+  gap: 0px;
+  border-radius: 8px;
+  border: none;
+  opacity: 0px;
+  background-color: #eff0f4;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  text-align: start;
+  color: #333333;
+}
+::placeholder {
+  color: #333333;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 30px;
+  padding: 4px;
+}
+
+.language-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  font-family: Poppins;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: #333333;
+}
+
+.flag-size {
+  width: 30px;
+  height: 20px;
+  gap: 0px;
+  opacity: 0px;
+  border: 1px solid #999999;
+}
+
+.translate-button {
+  width: 322px;
+  height: 50px;
+  gap: 0px;
+  border-radius: 6px;
+  border: none;
+  opacity: 0px;
+  color: #ffffff;
+  background-color: #035a9d;
+  font-family: Poppins;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+}

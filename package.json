@@ -1,0 +1,15 @@
+{
+  "name": "polyglot",
+  "version": "1.0.0",
+  "description": "My First openAI api project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.html"
+  },
+  "author": "Bhawna",
+  "license": "ISC",
+  "dependencies": {
+    "openai": "^4.77.0"
+  }
+}

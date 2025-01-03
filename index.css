@@ -106,7 +106,7 @@
   color: #333333;
 }
 ::placeholder {
-  color: #333333;
+  color: #999999;
   font-family: Poppins;
   font-size: 20px;
   font-weight: 600;
@@ -136,7 +136,7 @@
   border: 1px solid #999999;
 }
 
-.translate-button {
+.text-button {
   width: 322px;
   height: 50px;
   gap: 0px;
@@ -150,4 +150,7 @@
   font-weight: 700;
   line-height: 36px;
   text-align: center;
+}
+.displayNone {
+  display: none;
 }

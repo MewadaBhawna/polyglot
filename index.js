@@ -1,5 +1,3 @@
-import OpenAI from "openai";
-
 const translateBtn = document.querySelector(".translate-button");
 translateBtn.addEventListener("click", translateData);
 const startOverBtn = document.querySelector(".start-over-button");
@@ -7,9 +5,6 @@ startOverBtn.addEventListener("click", addDisplayNone);
 let text = "";
 const languageInput = document.getElementsByName("language");
 let selectedLanguage = "French";
-const openai = new OpenAI({
-  dangerouslyAllowBrowser: true,
-});
 
 function translateData() {
   try {
@@ -36,16 +31,19 @@ async function callTranslateAPI() {
       },
       { role: "user", content: text },
     ];
-    const response = await openai.chat.completions.create({
-      model: "gpt-4o",
-      messages: messages,
-      temperature: 1.1,
+    const workerURL = "https://openai-api-worker.bhawnaislive.workers.dev/";
+    const response = await fetch(workerURL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(messages),
     });
+    const data = await response.json();
     document.getElementById("inputScreen").classList.add("displayNone");
     document.getElementById("resultScreen").classList.remove("displayNone");
     document.getElementById("originalData").innerHTML = text;
-    document.getElementById("translatedData").innerHTML =
-      response.choices[0].message.content;
+    document.getElementById("translatedData").innerHTML = data.content;
   } catch (err) {
     console.error(err);
   }
